@@ -1,0 +1,52 @@
+<div class="website-switcher-banner" id="website-switcher-banner">
+    <div class="website-switcher-banner__message" id="website-switcher-banner__message">
+        {% trans with {'%language%': '<span class="website-switcher-banner__user-language"></span>'} %}
+            We've detected you're an %language% speaker.
+        {% endtrans %}
+        <span class="website-switcher-banner__redirection-message">
+            {% trans with {'%language%': '<div class="website-switcher-banner__flag flag flag-icon-background" id="website-switcher-banner__flag"></div> <span class="website-switcher-banner__user-language"></span>'} %}
+                Would you like to be redirected to our %language% website?
+            {% endtrans %}
+        </span>
+    </div>
+
+    <div class="website-switcher-banner__action">
+        <div class="website-switcher-banner__btn" id="website-switcher-banner__switch">
+            {{ 'Yes'|trans }}
+        </div>
+
+        <div class="website-switcher-banner__btn" id="website-switcher-banner__hide">
+            {{ "No, don't ask me again"|trans }}
+        </div>
+
+        <div class="website-switcher-banner__close" id="website-switcher-banner__close" title="{{ 'Close'|trans }}">
+            <i class="website-switcher-banner__icon-close"></i>
+        </div>
+    </div>
+</div>
+
+<script>
+    {% autoescape 'js' %}
+        (function() {
+            var websiteSwitcherBanner = new eZ.WebsiteSwitcherBanner({
+                currentSiteaccessLanguage: '{{ currentSiteaccessLanguage }}',
+                cookieName: '{{ cookieName }}',
+                days: {{ cookieValidityDays }},
+                languageLookup: {
+                    {% for name, language in supportedLanguages %}
+                        '{{ language.code }}': {
+                            'language': '{{ name }}',
+                            'country': '{{ language.country }}',
+                            'url': '{{ language.siteaccess }}',
+                            'flag': '{{ language.flag }}'
+                        },
+                    {% endfor %}
+                }
+            });
+
+            setTimeout(function () {
+                websiteSwitcherBanner.show()
+            }, 1000);
+        }) ();
+    {% endautoescape %}
+</script>

@@ -1,0 +1,114 @@
+.website-switcher-banner {
+    font-family: Tahoma;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background: #006a8d;
+    width: 100%;
+    z-index: 1024;
+    opacity: 0;
+    -webkit-transition: all .5s linear;
+            transition: all .5s linear;
+    margin-top: -70px;
+}
+
+.website-switcher-banner--fade-in {
+    opacity: 1;
+    margin-top: 0;
+}
+
+.website-switcher-banner--fade-out {
+    opacity: 0;
+    margin-top: -70px;
+}
+
+.website-switcher-banner__message {
+    margin: 15px 0;
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+}
+
+.website-switcher-banner__close {
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    position: relative;
+    top: -2px;
+}
+
+.website-switcher-banner__close:hover,
+.website-switcher-banner__close:focus {
+    color: #ff6400;
+    text-decoration: none;
+}
+
+.website-switcher-banner__btn {
+    font-size: 16px;
+    border-radius: 4px;
+    background: #ff6400;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 4px 12px;
+    margin: 0 5px;
+}
+
+.website-switcher-banner__btn:hover,
+.website-switcher-banner__btn:focus {
+    background: #ff7A00;
+    color: #fff;
+}
+
+.website-switcher-banner__action {
+    display: inline-block;
+    float: right;
+    text-align: right;
+    margin: 10px 35px 10px 0;
+}
+
+.website-switcher-banner__flag {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.website-switcher-banner__redirection-message {
+    color: #ffdca3;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-btxkoh');
+    src:url('../fonts/icomoon.eot?#iefix-btxkoh') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-btxkoh') format('woff'),
+    url('../fonts/icomoon.ttf?-btxkoh') format('truetype'),
+    url('../fonts/icomoon.svg?-btxkoh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="website-switcher-banner__icon-"],
+[class*=" website-switcher-banner__icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* better font rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.website-switcher-banner__icon-close:before {
+    content: "\ea0f";
+}

@@ -1,0 +1,15 @@
+parameters:
+    omniproject.ez_website_switcher.twig_extension.class: OmniProject\EzPlatformWebsiteSwitcherBundle\Twig\WebsiteSwitcherTwigExtension
+
+services:
+    omniproject.ez_website_switcher.twig_extension:
+        class: "%omniproject.ez_website_switcher.twig_extension.class%"
+        arguments:
+            - "@ezpublish.translation_helper"
+            - "@ezpublish.locale.converter"
+            - cookieName: "%ez_website_switcher.cookie_name%"
+              days: "%ez_website_switcher.days%"
+        calls:
+            - [setLanguages, ["$languages$"]]
+        tags:
+            - { name: twig.extension }

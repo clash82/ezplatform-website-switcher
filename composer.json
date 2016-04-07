@@ -1,0 +1,26 @@
+{
+  "name": "omniproject/ezplatform-website-switcher",
+  "type": "library",
+  "description": "Adds option to suggest to the user to visit your website in another language. This bundle uses the main language of the browser in order to redirect to the correct site.",
+  "keywords": ["ezplatform", "ezpublish", "languages", "siteaccess", "localisation", "translations", "ezsystems", "omniproject"],
+  "license": "MIT",
+  "homepage": "https://github.com/omniproject/ezplatform-website-switcher",
+  "authors": [
+    {
+      "name": "Rafał Toborek",
+      "homepage": "http://omniproject.pl"
+    }
+  ],
+  "require": {
+    "robloach/component-installer": "*",
+    "components/flag-icon-css": "^1.4"
+  },
+  "config": {
+    "component-dir": "web/components"
+  },
+  "autoload": {
+    "psr-4": {
+      "OmniProject\\EzPlatformWebsiteSwitcherBundle\\": "bundle"
+    }
+  }
+}
