@@ -1,5 +1,7 @@
 # eZ Platform Website Switcher
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/9580ba75-88cc-4949-a78a-e4422566cefa/big.png)](https://insight.sensiolabs.com/projects/9580ba75-88cc-4949-a78a-e4422566cefa)
+
 With this bundle, you can suggest to the user to visit your website in another language. This bundle uses the main language of the browser in order to redirect to the correct site.
 
 ![screenshot](https://cloud.githubusercontent.com/assets/3033038/14352389/91adbf3e-fcd4-11e5-9a9c-90b1554228b5.png)
