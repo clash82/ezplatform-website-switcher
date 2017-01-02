@@ -2,7 +2,7 @@
 /**
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace OmniProject\EzPlatformWebsiteSwitcherBundle\DependencyInjection;
+namespace Clash82\EzPlatformWebsiteSwitcherBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

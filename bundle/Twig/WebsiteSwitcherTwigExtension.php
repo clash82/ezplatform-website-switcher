@@ -2,7 +2,7 @@
 /**
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace OmniProject\EzPlatformWebsiteSwitcherBundle\Twig;
+namespace Clash82\EzPlatformWebsiteSwitcherBundle\Twig;
 
 use Twig_Extension;
 use Twig_SimpleFunction;
@@ -112,7 +112,7 @@ class WebsiteSwitcherTwigExtension extends Twig_Extension
         $currentSiteaccessLanguage = substr($currentSiteaccessLanguage, 0, strpos($currentSiteaccessLanguage, '_'));
 
         return $twigEnvironment->render(
-            'OmniProjectEzPlatformWebsiteSwitcherBundle::website_switcher.html.twig', array(
+            'Clash82EzPlatformWebsiteSwitcherBundle::website_switcher.html.twig', array(
                 'supportedLanguages' => $this->supportedLanguages,
                 'cookieName' => $options['cookieName'],
                 'cookieValidityDays' => $options['days'],

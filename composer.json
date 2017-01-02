@@ -1,14 +1,14 @@
 {
-  "name": "omniproject/ezplatform-website-switcher",
+  "name": "clash82/ezplatform-website-switcher",
   "type": "library",
   "description": "Adds option to suggest to the user to visit your website in another language. This bundle uses the main language of the browser in order to redirect to the correct site.",
-  "keywords": ["ezplatform", "ezpublish", "languages", "siteaccess", "localisation", "translations", "ezsystems", "omniproject"],
+  "keywords": ["ezplatform", "ezpublish", "languages", "siteaccess", "localisation", "translations", "ezsystems", "clash82"],
   "license": "MIT",
-  "homepage": "https://github.com/omniproject/ezplatform-website-switcher",
+  "homepage": "https://github.com/clash82/ezplatform-website-switcher",
   "authors": [
     {
       "name": "Rafał Toborek",
-      "homepage": "http://omniproject.pl"
+      "homepage": "http://toborek.info"
     }
   ],
   "require": {
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "OmniProject\\EzPlatformWebsiteSwitcherBundle\\": "bundle"
+      "Clash82\\EzPlatformWebsiteSwitcherBundle\\": "bundle"
     }
   }
 }

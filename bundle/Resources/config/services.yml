@@ -1,9 +1,6 @@
-parameters:
-    omniproject.ez_website_switcher.twig_extension.class: OmniProject\EzPlatformWebsiteSwitcherBundle\Twig\WebsiteSwitcherTwigExtension
-
 services:
-    omniproject.ez_website_switcher.twig_extension:
-        class: "%omniproject.ez_website_switcher.twig_extension.class%"
+    clash82.ez_website_switcher.twig_extension:
+        class: Clash82\EzPlatformWebsiteSwitcherBundle\Twig\WebsiteSwitcherTwigExtension
         arguments:
             - "@ezpublish.translation_helper"
             - "@ezpublish.locale.converter"

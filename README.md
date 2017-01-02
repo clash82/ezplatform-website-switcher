@@ -17,7 +17,7 @@ This package is available via Composer, so the instructions below are similar to
 
 Run the following command in a terminal, from your Symfony installation root (pick most recent release):
 ```bash
-composer require omniproject/ezplatform-website-switcher
+composer require clash82/ezplatform-website-switcher
 ```
 
 Enable the bundle in `app/AppKernel.php` file:
@@ -25,7 +25,7 @@ Enable the bundle in `app/AppKernel.php` file:
 ```php
 $bundles = array(
     // existing bundles
-    new OmniProject\EzPlatformWebsiteSwitcherBundle\OmniProjectEzPlatformWebsiteSwitcherBundle()
+    new Clash82\EzPlatformWebsiteSwitcherBundle\Clash82EzPlatformWebsiteSwitcherBundle()
 );
 ```
 
@@ -33,13 +33,13 @@ Add external assets to your bundle:
 
 - CSS:
 ```
-bundles/omniprojectezplatformwebsiteswitcher/css/website_switcher.css
+bundles/clash82ezplatformwebsiteswitcher/css/website_switcher.css
 components/flag-icon-css/css/flag-icon.min.css
 ```
 
 - JS:
 ```
-bundles/omniprojectezplatformwebsiteswitcher/js/website_switcher.js
+bundles/clash82ezplatformwebsiteswitcher/js/website_switcher.js
 ```
 
 If you are installing bundle via `composer require` you must also copy assets to your project `web` directory. You can do this by calling Symfony built-in command from the project root directory:

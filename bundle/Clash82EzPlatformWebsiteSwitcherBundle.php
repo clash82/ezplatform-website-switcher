@@ -2,12 +2,12 @@
 /**
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace OmniProject\EzPlatformWebsiteSwitcherBundle;
+namespace Clash82\EzPlatformWebsiteSwitcherBundle;
 
-use OmniProject\EzPlatformWebsiteSwitcherBundle\DependencyInjection\EzPlatformWebsiteSwitcherExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Clash82\EzPlatformWebsiteSwitcherBundle\DependencyInjection\EzPlatformWebsiteSwitcherExtension;
 
-class OmniProjectEzPlatformWebsiteSwitcherBundle extends Bundle
+class Clash82EzPlatformWebsiteSwitcherBundle extends Bundle
 {
     public function getContainerExtension()
     {
